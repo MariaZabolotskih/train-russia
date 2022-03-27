@@ -145,13 +145,13 @@ p {
 .img_card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
 }
 
 .image {
   object-fit: cover;
-  height: 65vh;
   border: 1px solid #6e6b6b;
 
 }
