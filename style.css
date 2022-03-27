@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&subset=cyrillic');
+
+@keyframes header_anim {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: #4c5860;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 5.5em;
+}
+
+h2 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h3 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+h4 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+p {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  min-height: 100vh;
+  background-image: url("poezd2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header_title {
+  transform: translateX(0);
+  animation-name: header_anim;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 3rem;
+}
+
+.article {
+  position: relative;
+  min-height: 100vh;
+  padding: 8px 50px;
+}
+
+.article_whitebg::before,
+.article_blackbg::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content:'';
+}
+
+.article_whitebg::before {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.article_blackbg::before {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.article_first,
+.article_second {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.article_first {
+  background-image: url("poezd3.jpg");
+}
+
+.article_second {
+  background-image: url("poezd1.jpg");
+}
+
+
+.black {
+  color: #000;
+}
+
+.white {
+  color: #fff;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.img_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+.img_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.image {
+  object-fit: cover;
+  height: 65vh;
+  border: 1px solid #6e6b6b;
+
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.copyright {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
