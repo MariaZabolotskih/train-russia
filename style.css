@@ -167,3 +167,14 @@ p {
   align-items: flex-end;
   padding: 1rem;
 }
+
+.table {
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+}
